@@ -1,24 +1,90 @@
-body{
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: 100% 1000px;
+/*
+to do list:
+
+add background image;
+add wires / ware iamges;
+add reset button;
+Event listeners for wires; 
+Initial state / planning; 
+make timer that tracks down;  ( start @ 30s)
+pop up text - wine condition; 
+pop up text - lose condition;
+change cut wire image ; 
+randomlly assign wires to cut; 
+change Background image on lose; 
+on win consition; 
+
+Make the safe wire cut
+reset timer text on try again
+remove event listeners on lose 
+on win condition 
+	stop timer
+	remove event listener 
+	pop up win text
+	cheers / happy audio 
+	stop siren
+start siren on page load 
+cut wire noise 
+explody sound 
+Stop timer on failure when you cut the wrong wire.
+detect if the timer run out. 
+
+
+*/
+
+body {
+	background-repeat: no-repeat;
+	background-size: 100% 1000px;
+	text-align: center;
 }
-.unexploded{
-  background-image: url("./img/simcity.jpg");
+
+.unexploaded {
+	background-image: url("./img/simcity.jpg");
 }
-.exploded{
-  background-image: url("./img/explosion.jpg");
+
+.exploaded{
+	background-image: url("./img/explosion.jpg");
 }
-#title{
-  display: none;
-  text-align: center;
-  color: white;
+
+#box {
+	background-color: #333;
+	padding: 20px 10px 30px 10px;
+	display: inline-block;
 }
-#timer{
-  color: chartreuse;
+
+#timer {
+	color: chartreuse;
+
 }
-#box{
-  background-color: black;
-  display: inline-block;
-  padding: 20px 10px 30px 10px;
+
+#reset {
+	font-size: 18px;
+	padding: 18px;
+
 }
+
+#reset:hover{
+	background-color: #333;
+	color: red;
+}
+
+#message {
+	color:#fff;
+	background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
